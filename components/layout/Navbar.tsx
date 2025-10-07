@@ -130,10 +130,12 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="outline" className="cursor-pointer">
+            <Button asChild variant="outline" className="cursor-pointer">
               <Link href="/login">Login</Link>
             </Button>
-            <Button>Start for free</Button>
+            <Button asChild className="cursor-pointer">
+              <Link href="/signup">Start for free</Link>
+            </Button>
           </div>
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">

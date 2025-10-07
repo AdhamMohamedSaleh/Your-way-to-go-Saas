@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
@@ -38,7 +39,7 @@ const defaultSections = [
   {
     title: "Company",
     links: [
-      { name: "About", href: "#" },
+      { name: "About", href: "/about" },
       { name: "Team", href: "#" },
       { name: "Blog", href: "#" },
       { name: "Careers", href: "#" },
@@ -81,20 +82,20 @@ const Footer = ({
   legalLinks = defaultLegalLinks,
 }: Footer7Props) => {
   return (
-    <section className="py-32">
+    <section className="py-24">
       <div className="container mx-auto">
         <div className="flex w-full flex-col justify-between gap-10 lg:flex-row lg:items-start lg:text-left">
           <div className="flex w-full flex-col justify-between gap-6 lg:items-start">
             {/* Logo */}
             <div className="flex items-center gap-2 lg:justify-start">
-              <a href={logo.url}>
+              <Link href={logo.url}>
                 <img
                   src={logo.src}
                   alt={logo.alt}
                   title={logo.title}
                   className="h-8"
                 />
-              </a>
+              </Link>
               <h2 className="text-xl font-semibold">{logo.title}</h2>
             </div>
             <p className="text-muted-foreground max-w-[70%] text-sm">
@@ -103,9 +104,9 @@ const Footer = ({
             <ul className="text-muted-foreground flex items-center space-x-6">
               {socialLinks.map((social, idx) => (
                 <li key={idx} className="hover:text-primary font-medium">
-                  <a href={social.href} aria-label={social.label}>
+                  <Link href={social.href} aria-label={social.label}>
                     {social.icon}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -120,7 +121,7 @@ const Footer = ({
                       key={linkIdx}
                       className="hover:text-primary font-medium"
                     >
-                      <a href={link.href}>{link.name}</a>
+                      <Link href={link.href}>{link.name}</Link>
                     </li>
                   ))}
                 </ul>
@@ -133,7 +134,7 @@ const Footer = ({
           <ul className="order-1 flex flex-col gap-2 md:order-2 md:flex-row">
             {legalLinks.map((link, idx) => (
               <li key={idx} className="hover:text-primary">
-                <a href={link.href}> {link.name}</a>
+                <Link href={link.href}> {link.name}</Link>
               </li>
             ))}
           </ul>
