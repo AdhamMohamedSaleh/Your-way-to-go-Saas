@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
 interface Login2Props {
   heading?: string;
@@ -33,14 +34,14 @@ const Login = ({
       <div className="flex h-full items-center justify-center">
         <div className="flex flex-col items-center gap-6 lg:justify-start">
           {/* Logo */}
-          <a href={logo.url}>
+          <Link href={logo.url}>
             <img
               src={logo.src}
               alt={logo.alt}
               title={logo.title}
               className="h-10 dark:invert"
             />
-          </a>
+          </Link>
           <div className="min-w-sm border-muted bg-background flex w-full max-w-sm flex-col items-center gap-y-4 rounded-md border px-6 py-8 shadow-md">
             {heading && <h1 className="text-xl font-semibold">{heading}</h1>}
             <div className="flex w-full flex-col gap-2">
@@ -67,12 +68,12 @@ const Login = ({
           </div>
           <div className="text-muted-foreground flex justify-center gap-1 text-sm">
             <p>{signupText}</p>
-            <a
+            <Link
               href={signupUrl}
               className="text-primary font-medium hover:underline"
             >
               Sign up
-            </a>
+            </Link>
           </div>
         </div>
       </div>

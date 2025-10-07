@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <Link
-            href="https://www.shadcnblocks.com"
+            href="/"
             className="flex items-center gap-2"
           >
             <img
@@ -112,19 +112,17 @@ const Navbar = () => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink
+                <NavigationMenuLink asChild>
+                  <Link 
                   href="/pricing"
-                  className={navigationMenuTriggerStyle()}
-                >
-                  Pricing
+                  className={navigationMenuTriggerStyle()}>Pricing</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuLink
-                  href="#"
-                  className={navigationMenuTriggerStyle()}
-                >
-                  Contact
+                <NavigationMenuLink asChild>
+                  <Link 
+                  href="/contact"
+                  className={navigationMenuTriggerStyle()}>Contact</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
