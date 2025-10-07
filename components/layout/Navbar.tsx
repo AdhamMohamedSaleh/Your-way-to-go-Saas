@@ -130,7 +130,7 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="outline">
+            <Button variant="outline" className="cursor-pointer">
               <Link href="/login">Login</Link>
             </Button>
             <Button>Start for free</Button>
