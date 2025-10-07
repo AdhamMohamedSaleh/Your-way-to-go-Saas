@@ -194,6 +194,8 @@
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
+  ::selection {
+  }
   .typography {
     max-width: 65ch;
     color: var(--color-foreground);

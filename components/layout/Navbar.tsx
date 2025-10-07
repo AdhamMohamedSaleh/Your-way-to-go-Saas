@@ -62,7 +62,7 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="py-4">
+    <section className="py-4 sticky top-0 z-50 bg-background">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <Link
@@ -130,7 +130,9 @@ const Navbar = () => {
             </NavigationMenuList>
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
-            <Button variant="outline">Sign in</Button>
+            <Button variant="outline">
+              <Link href="/login">Login</Link>
+            </Button>
             <Button>Start for free</Button>
           </div>
           <Sheet>
