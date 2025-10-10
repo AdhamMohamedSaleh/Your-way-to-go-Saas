@@ -1,4 +1,4 @@
-import { Wifi, Zap } from "lucide-react";
+import { Code, Zap } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -17,7 +17,7 @@ interface HeroProps {
 }
 
 const Hero = ({
-  icon = <Wifi className="size-6" />,
+  icon = <Code className="size-6" />,
   heading = "Blocks built with Shadcn & Tailwind",
   description = "Finely crafted components built with React, Tailwind and Shadcn UI. Developers can copy and paste these blocks directly into their project.",
   button = {
