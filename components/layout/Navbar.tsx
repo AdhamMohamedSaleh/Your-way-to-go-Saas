@@ -66,7 +66,7 @@ const Navbar = () => {
       <div className="container mx-auto">
         <nav className="flex items-center justify-between">
           <Link
-            href="/"
+            href="/main"
             className="flex items-center gap-2"
           >
             <img
@@ -114,14 +114,14 @@ const Navbar = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link 
-                  href="/pricing"
+                  href="/main/pricing"
                   className={navigationMenuTriggerStyle()}>Pricing</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link 
-                  href="/contact"
+                  href="/main/contact"
                   className={navigationMenuTriggerStyle()}>Contact</Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -129,10 +129,10 @@ const Navbar = () => {
           </NavigationMenu>
           <div className="hidden items-center gap-4 lg:flex">
             <Button asChild variant="outline" className="cursor-pointer">
-              <Link href="/login">Login</Link>
+              <Link href="/main/login">Login</Link>
             </Button>
             <Button asChild className="cursor-pointer">
-              <Link href="/signup">Start for free</Link>
+              <Link href="/main/signup">Start for free</Link>
             </Button>
           </div>
           <Sheet>

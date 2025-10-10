@@ -2,7 +2,7 @@ import { Wifi, Zap } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-interface Hero115Props {
+interface HeroProps {
   icon?: React.ReactNode;
   heading: string;
   description: string;
@@ -28,7 +28,7 @@ const Hero = ({
   trustText = "Trusted by 25.000+ Businesses Worldwide",
   imageSrc = "https://deifkwefumgah.cloudfront.net/shadcnblocks/block/placeholder-1.svg",
   imageAlt = "placeholder",
-}: Hero115Props) => {
+}: HeroProps) => {
   return (
     <section className="overflow-hidden py-32">
       <div className="container mx-auto">
